@@ -2,9 +2,10 @@
 # Recipe:: default
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
+#
 if node['platform_family'] == "rhel"
 	package = "httpd"
-elseif  node['platform_fmaily'] == "debian"
+elsif  node['platform_fmaily'] == "debian"
 	package = "apache2"
 end
 
